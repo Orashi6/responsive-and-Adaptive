@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+:root{
+    --global--:#2B3844;
+}
+
+header {
+    background-color: var(--global--);
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.header-link {
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.82px;
+    text-align: left;
+    color: white;
+}
+.search-icon{
+    position: absolute;
+    top: 45%;
+    left: 0.3%;
+}
+form{
+    position: relative;
+}
+input{
+    width: 430px;
+    padding: 22px 20px;
+    background-color: var(--global--);
+    color: white;
+    margin: 48px 0;
+    border: none;
+    border-radius: 5px;
+
+}
+main{
+    background-color: #202C36;
+}
+.wrapper{
+
+}
+.top-wrapper{
+    display: flex;
+    gap: 50px;
+    padding: 0 0 50px 0;
+}
+.bottom-wrapper{
+    display: flex;
+    gap: 50px;
+
+
+}
+.card{
+    color: white;
+    text-align: center;
+    background-color: #2B3844;
+    width: max-content;
+    height: 233px;
+}
+p{
+    padding: 10px 0;
+}
+
+
+@media screen and (max-width:768px) {
+    .top-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .bottom-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .wrapper{
+        display: flex;
+        justify-content:space-between;
+    }
+    input{
+        width: 100%;
+        padding: 22px 20px;
+        background-color: var(--global--);
+        color: white;
+        margin: 48px 0;
+}
+}
+@media screen and (max-width:376px) {
+    .top-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        flex-direction: column;
+    }
+    .bottom-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        flex-direction: column;
+    }
+    .wrapper{
+        flex-direction: column;
+    }
+    .header-link {
+        font-family: Nunito Sans;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 21.82px;
+        text-align: left;
+        color: white;
+    }
+     .header-link{
+        font-size: 80%;
+     }
+     .header-wrapper{
+        display: flex;
+        justify-content: space-between;
+     }
+    .header-logo{
+        font-size: 50px;
+        transform: scale(0.7);
+    }
+    
+}
